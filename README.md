@@ -4,7 +4,7 @@
 
 This project is a responsive frontend clone of the Udemy online learning platform, built using HTML and CSS with a focus on Flexbox for layout design. It replicates the visual structure and aesthetic of Udemy, allowing users to view a static representation of course listings and details across various devices. This is a frontend-only project with static content, emphasizing clean design and responsive layout without dynamic functionality.
 
-# website link :
+# website link : [https://thamizhnilavan0312.github.io/Udemy-Clone/]
 
 # Features
 Homepage: Showcases featured courses, categories, and a static search bar.
