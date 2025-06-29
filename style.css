@@ -85,6 +85,17 @@ body{
     color: white;
     padding: 10px;
     border-radius: 30px;
+    cursor: pointer;
+    border: solid #a435f0 1px;
+
+}
+
+.categories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: solid #a435f0 1px;
+
 }
 
 .Ad-section{
@@ -103,6 +114,22 @@ body{
     position: absolute;
     top: 10px;
     left: 10px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 #countdown{
@@ -181,4 +208,63 @@ body{
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+
+/* Floating Button */
+#chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #a435f0;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Chat Popup */
+#chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.chat-header {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: bold;
+}
+
+.chat-body {
+  padding: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.chat-input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline: none;
 }
