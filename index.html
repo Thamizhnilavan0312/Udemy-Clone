@@ -27,7 +27,7 @@
         </div>
         <div class="navbar__s3">
             <p>Courses</p>
-                        <div class="mylearning">
+            <div class="mylearning">
                 <p>My Learning</p>
                 <div class="mylearning__popup">
                     <p>It appears you haven't purchased any</p>
@@ -39,6 +39,11 @@
             <i class="fa-solid fa-bell" style="color: #000000;"></i>
             <i class="fa-solid fa-user" style="color: #000000;"></i>
         </div>
+
+        <div class="navbar__s4">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+
     </div>
 
     <div class="categories">
@@ -50,12 +55,12 @@
         <p>Marketing</p>
     </div>
     <div class="Ad-section">
-                <img src="./images/adsection.jpg" alt="Advertisement">
+        <img src="./images/adsection.jpg" alt="Advertisement">
         <div class="Ad-section__offer">
             <h2><strong>Udemy Limited Deal! Ends in</strong> <span id="countdown"></span> </h2>
             <p>Access the top-rated courses with 30% off.</p>
-    </div>
         </div>
+    </div>
 
 
     <div class="recommended">
@@ -187,22 +192,22 @@
     <div class="footer">
         <div class="footer__one">
 
-        <div class="footer__one__s1">
-            <p>Udemy Business</p>
-            <p>Teach on Udemy</p>
-            <p>Get the app</p>
-            <p>About Us</p>
-            <p>Contact Us</p>
-        </div>
+            <div class="footer__one__s1">
+                <p>Udemy Business</p>
+                <p>Teach on Udemy</p>
+                <p>Get the app</p>
+                <p>About Us</p>
+                <p>Contact Us</p>
+            </div>
 
-        <div class="footer__one__s2">
-            <p>Careers</p>
-            <p>Blog</p>
-            <p>Help and Support</p>
-            <p>Affiliate</p>
-            <p>Investors</p>
+            <div class="footer__one__s2">
+                <p>Careers</p>
+                <p>Blog</p>
+                <p>Help and Support</p>
+                <p>Affiliate</p>
+                <p>Investors</p>
 
-        </div>
+            </div>
         </div>
 
         <div class="footer__two">
@@ -221,22 +226,22 @@
         <div class="chat-body">
             <p>Hi there! How can I help you today?</p>
         </div>
-        <input type="text" placeholder="Type a message.." class="chat-input"> 
+        <input type="text" placeholder="Type a message.." class="chat-input">
     </div>
 
 </body>
 
 </html>
- /* Virtual Assitant */
- <script>
+/* Virtual Assitant */
+<script>
     const chatBtn = document.getElementById("chat-button");
     const chatPopup = document.getElementById("chat-popup");
 
     chatBtn.addEventListener("click", () => {
         chatPopup.style.display =
-        chatPopup.style.display === "block" ? "none" : "block";
+            chatPopup.style.display === "block" ? "none" : "block";
     });
- </script>
+</script>
 
 <script>
     // Set countdown duration (24 hours from the moment user opens the page)
